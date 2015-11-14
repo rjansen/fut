@@ -447,7 +447,7 @@ class Core(object):
 
     def logout(self, save=True):
         """Logs out nicely (like clicking on logout button)."""
-        self.r.get('https://www.easports.com/fifa/logout')
+        self.r.get('https://www.easports.com/signout?redirectUri=https%3A%2F%2Fwww.easports.com%2Ffifa')
         if save:
             self.saveSession()
         return True
